@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: 1rem;
+  padding: 15px;
+  font-family: Roboto;
+}
+.logo {
+  margin-left: 15px;
+  width: 80px;
+  height: 30px;
+}
+.search-logo {
+  margin-right: 5px;
+}
+
+.nav {
+  background-color: #3367d6;
+  padding: 10px;
+  display: flex;
+  place-items: center;
+  padding: 10px;
+}
+.nav > img {
+  margin-right: 2rem;
+}
+
+input {
+  outline: none;
+  background-color: #2850a7;
+  color: #ececec;
+  border-style: none;
+}
+
+.search-bar {
+  display: flex;
+  place-items: center;
+  background-color: #2850a7;
+  padding: 10px;
+  border: 1px solid #64748b;
+}
+
+ul {
+  box-shadow: 3px 4px 29px 2px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 3px 4px 29px 2px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 3px 4px 29px 2px rgba(0, 0, 0, 0.38);
+  list-style: none;
+}
+
+.history-item {
+  display: flex;
+  place-items: center;
+}
+.history-item > p {
+  width: 80px;
+  font-size: 15px;
+}
+.logo-name {
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+}
+.logo-img {
+  width: 30px;
+  margin-right: 15px;
+}
+.domain {
+  margin-top: 20px;
+  font-size: 15px;
+  margin-left: 5px;
+  color: #475569;
+}
+.delete-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+button {
+  text-align: center;
+  background-color: transparent;
+  border: 0px none transparent;
+  margin-top: 10px;
+}
+.div-delete {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+.no-history {
+  color: #000000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
